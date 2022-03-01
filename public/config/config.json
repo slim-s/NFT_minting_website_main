@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x83Cede07Ef0CEfE7e2bdd0B28F0936a6E5c43258",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x83cede07ef0cefe7e2bdd0b28f0936a6e5c43258",
+  "NETWORK": {
+    "NAME": "Rinkeby Test Network",
+    "SYMBOL": "ETH",
+    "ID": 4
+  },
+  "NFT_NAME": "DemiGoats NFT",
+  "SYMBOL": "DMG",
+  "MAX_SUPPLY": 100,
+  "WEI_COST": 75000000000000000,
+  "DISPLAY_COST": 0.01,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/demigoats",
+  "SHOW_BACKGROUND": true
+}
