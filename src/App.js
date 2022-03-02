@@ -68,7 +68,7 @@ export const ResponsiveWrapper = styled.div`
 export const StyledLogo = styled.img`
   width: 200px;
   @media (min-width: 767px) {
-    width: 300px;
+    width: 200px;
   }
   transition: width 0.5s;
   transition: height 0.5s;
@@ -198,17 +198,24 @@ function App() {
       <s.Container
         flex={3}
         ai={"center"}
-        style={{ padding: 0, backgroundColor: "var(--primary)" }}
+        style={{ padding: 20, backgroundColor: "var(--accent)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/backdrop.png" : null}
       >
-        <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
-        <s.SpacerLarge />
-        <s.SpacerLarge />
-        <s.SpacerLarge />
+          <s.Container
+          jc= {"start"} ai={"start"}
+          Style= {{ padding: 0}}
+      >
+       <StyledLogo alt={"DemiGoats.club logo"} src={"/config/images/log.png"} /> 
+              
+        </s.Container>
 
+        <s.SpacerLarge />
+        <s.SpacerLarge />
+        <s.SpacerLarge />
+        
         <ResponsiveWrapper style={{ padding: 0 }} test>
-          <s.Container jc={"flex-start"} ai={"center"}>
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} />
+          <s.Container jc={"center"} ai={"center"}>
+            <StyledImg alt={"NFT Preview gif"} src={"/config/images/exampl.gif"} />
           </s.Container>
           <s.SpacerLarge />
           <s.Container
@@ -216,7 +223,7 @@ function App() {
             jc={"center"}
             ai={"center"}
             style={{
-              backgroundColor: "var(--accent)",
+              
               padding: 20,
               borderRadius: 20,
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
@@ -225,7 +232,7 @@ function App() {
             <s.TextTitle
               style={{
                 textAlign: "center",
-                fontSize: 50,
+                fontSize: 40,
                 fontWeight: "bold",
                 color: "var(--accent-text)",
               }}
@@ -374,6 +381,8 @@ function App() {
           <s.SpacerLarge />
         </ResponsiveWrapper>
         <s.SpacerLarge />
+        <s.SpacerLarge></s.SpacerLarge>
+        <s.SpacerLarge></s.SpacerLarge>
 
         <s.Container jc={"center"} ai={"center"} style={{ width: "50%" }}>
           <s.TextDescription
@@ -381,6 +390,7 @@ function App() {
               textAlign: "center",
               color: "var(--primary-text)",
               fontSize: 60,
+              fontWeight: "bold"
             }}
           >
             <h3>!WELCOME!</h3>
@@ -400,18 +410,23 @@ function App() {
           </s.TextDescription>
         </s.Container>
         <s.SpacerLarge />
-        <s.Container jc={"center"} ai={"end"} style={{ width: "50%" }}>
+        <s.SpacerLarge></s.SpacerLarge>
+        <s.SpacerLarge></s.SpacerLarge>
+        <s.Container jc={"center"} ai={"end"} style={{ width: "70%" }}>
           <s.TextDescription
             style={{
               textAlign: "end",
               color: "var(--primary)",
               fontSize: 60,
+              fontWeight: "bold"
             }}
           >
             <h3>!STORY!</h3>
           </s.TextDescription>
         </s.Container>
         <s.SpacerLarge />
+        <s.SpacerLarge></s.SpacerLarge>
+        <s.SpacerLarge></s.SpacerLarge>
 
         <s.Container jc={"center"} ai={"center"} style={{ width: "80%" }}>
           <s.TextDescription
@@ -419,11 +434,14 @@ function App() {
               textAlign: "center",
               color: "var(--primary)",
               fontSize: 60,
+              fontWeight: "bold"
             }}
           >
            <h4>!TYPE OF DemiGOATS!</h4>
           </s.TextDescription>
           <s.SpacerLarge />
+          <s.SpacerLarge></s.SpacerLarge>
+          <s.SpacerLarge></s.SpacerLarge>
           <s.TextDescription
             style={{
               textAlign: "center",
@@ -448,6 +466,7 @@ function App() {
               textAlign: "center",
               color: "var(--primary)",
               fontSize: 60,
+              fontWeight: "bold"
             }}
           >
             <h4>!ROADMAP!</h4>
@@ -506,7 +525,7 @@ function App() {
               fontSize: 21,
             }}
           >There will be a public launch of DemiGoats 
-           after the second round minting is<br></br> completed.
+           after the second round <br></br> minting is completed.
           
             
           </s.TextDescription>
@@ -524,6 +543,146 @@ function App() {
             }}
           >
             <h5>GrimReaper collection!</h5>
+          </s.TextDescription>
+        </s.Container>
+        <s.Container jc={"center"} ai={"end"} style={{ width: "70%" }}>
+          <s.TextDescription
+            style={{
+              textAlign: "end",
+              color: "var(--primary)",
+              fontSize: 21,
+            }}
+          >
+            GrimReaper collection of limited NFTs will 
+            be revealed after <br></br>the 50% of the DemiGoats 
+            are sold.
+        <s.SpacerLarge>
+        </s.SpacerLarge>
+        
+          </s.TextDescription>
+        </s.Container>
+        <s.SpacerLarge></s.SpacerLarge>
+        <s.Container jc={"center"} ai={"end"} style={{ width: "70%" }}>
+          <s.TextDescription
+            style={{
+              textAlign: "end",
+              color: "var(--primary)",
+              fontSize: 40,
+            }}
+          >
+            <h5>TheEmperor!</h5>
+          </s.TextDescription>
+        </s.Container>
+        <s.Container jc={"center"} ai={"end"} style={{ width: "70%" }}>
+          <s.TextDescription
+            style={{
+              textAlign: "end",
+              color: "var(--primary)",
+              fontSize: 21,
+            }}
+          >
+            TheEmperor collection of limited Nfts willl be
+            revealed <br></br> following the 100% selling out 
+            of GrimReaper collection.
+
+          </s.TextDescription>
+          <s.SpacerLarge></s.SpacerLarge>
+          <s.SpacerLarge></s.SpacerLarge>
+        </s.Container>
+        <s.SpacerLarge></s.SpacerLarge>
+        <s.Container jc={"center"} ai={"start"} style={{ width: "70%" }}>
+          <s.TextDescription
+            style={{
+              textAlign: "center",
+              color: "var(--primary)",
+              fontSize: 40,
+            }}
+          >
+            <h5>Giveaways and Bonuses!</h5>
+          </s.TextDescription>
+
+          
+        </s.Container>
+        <s.Container jc={"center"} ai={"start"} style={{ width: "70%" }}>
+          <s.TextDescription
+            style={{
+              textAlign: "start",
+              color: "var(--primary)",
+              fontSize: 21,
+            }}
+          >
+              DemiGoats NFT stakers will be allowed to 
+              participate in exclusive <br></br> events such as NFT 
+              airdropping, Character-story development,<br></br>
+              Land opportunities and many more...<br>
+              </br>    <s.SpacerSmall></s.SpacerSmall>          
+              For more information on exclusive gifts and 
+              bonuses to be <br></br> handed-out, refer to our
+              DISCORD server. 
+
+             </s.TextDescription>
+        </s.Container>
+        <s.SpacerLarge />
+        <s.SpacerLarge />
+        
+        <s.Container jc={"center"} ai={"start"} style={{ width: "70%" }}>
+          <s.TextDescription
+            style={{
+              textAlign: "center",
+              color: "var(--primary)",
+              fontSize: 40,
+            }}
+          >
+            <h5>Donations!</h5>
+          </s.TextDescription>
+        </s.Container>              
+        <s.Container jc={"center"} ai={"start"} style={{ width: "70%" }}>
+          <s.TextDescription
+            style={{
+              textAlign: "start",
+              color: "var(--primary)",
+              fontSize: 21,
+            }}
+          > Our team has come to the decision of
+            donating the a part <br></br>of our earning from
+            this project to UKRAINE, <br></br> to ease their
+            hardships if even by a little in these times.
+          
+                     
+          </s.TextDescription>
+          <s.SpacerLarge></s.SpacerLarge>
+          <s.SpacerLarge></s.SpacerLarge>
+          <s.SpacerLarge></s.SpacerLarge>
+        </s.Container>
+        <s.Container jc={"center"} ai={"end"} style={{ width: "70%" }}>
+          <s.TextDescription
+            style={{
+              textAlign: "end",
+              color: "var(--primary)",
+              fontSize: 40,
+            }}
+          >
+            <h5>Fututre of the Project!</h5>
+
+          </s.TextDescription>
+        </s.Container>
+        <s.Container jc={"center"} ai={"end"} style={{ width: "70%" }}>
+          <s.TextDescription
+            style={{
+              textAlign: "end",
+              color: "var(--primary)",
+              fontSize: 21,
+            }}
+          >
+            Our Team of artists is working together to launch 
+            more NFTs <br></br>which can be used in the upcoming 
+            GoatNation Metaverse.<br></br>
+            To stay updated on the current progress, head to
+            our discord/artists.
+
+        <s.SpacerLarge>
+        </s.SpacerLarge>
+        
           </s.TextDescription>
         </s.Container>
         <s.Container jc={"center"} ai={"center"} style={{ width: "80%" }}>
@@ -549,16 +708,27 @@ function App() {
         </s.Container>
 
         <s.SpacerLarge />
+        <s.SpacerLarge></s.SpacerLarge>
+        <s.SpacerLarge></s.SpacerLarge>
 
-        <s.Container jc={"center"} ai={"start"} style={{ width: "65%" }}>
+        <s.Container jc={"center"} ai={"start"} style={{ width: "70%" }}>
           <s.TextDescription
             style={{
               textAlign: "start",
-              color: "var(--primary)",
-              fontSize: 25,
+              color: "var(--primary-text)",
+              fontSize: 35,
+              fontWeight: "bold"
             }}
           >
             <h6>FAQs:</h6>
+            </s.TextDescription>
+            <s.TextDescription
+            style={{
+              textAlign: "start",
+              color: "var(--primary-text)",
+              fontSize: 18,
+            }}
+            >
             Where can I view my DemiGoat NFTs?
             <br></br>
             Once you have minted a DemiGoat NFT, you will be able to see it by
@@ -567,16 +737,17 @@ function App() {
             When is the Presale event dated?
             <br></br>
             we will be holding a presale event on the date addressed above for
-            our Whitelist members. Please join our Discord to learn how you can
+            our Whitelist members. Please join our Discord <br></br> to learn how you can
             join the Whitelist. The Whitelist spots will be very limited.
             <br></br>
             What can I do with my DemiGoat ?<br></br>
             You can use your DemiGoat as a profile picture online, and you can
-            also resell your DemiGoat for profit. Once Metavers is launched, you
+            also resell your DemiGoat for profit. <br></br> Once Metavers is launched, you
             will be able to use them in the Metavers and earn DemiGoat tokens.
             <br></br>
           </s.TextDescription>
-          <s.SpacerSmall />
+          <s.SpacerLarge />
+          <s.SpacerLarge />
         </s.Container>
 
         <s.SpacerLarge />
@@ -592,6 +763,7 @@ function App() {
             {CONFIG.NETWORK.NAME} Mainnet) and the correct address.
           </s.TextDescription>
           <s.SpacerSmall />
+          <s.SpacerLarge></s.SpacerLarge>
           <s.TextDescription
             style={{
               textAlign: "center",
@@ -600,8 +772,12 @@ function App() {
             }}
           >
             Smart Contract: <br></br>
-            0x83Cede07Ef0CEfE7e2bdd0B28F0936a6E5c43258
+            <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
+                {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
+              </StyledLink>
+            
           </s.TextDescription>
+          <s.SpacerLarge></s.SpacerLarge>
         </s.Container>
       </s.Container>
     </s.Screen>
